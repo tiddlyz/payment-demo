@@ -5,6 +5,12 @@ server:
 spring:
   application:
     name: payment-demo        # 应用名称
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/payment_demo?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: password
+
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss    # 定义json中时间格式
     time-zone: GMT+8
